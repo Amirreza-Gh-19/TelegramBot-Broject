@@ -257,4 +257,4 @@ def index():
         return "<h1>Welcome</h1>"
 write_json({} , "type.json")
 write_json({})
-app.run(host="0.0.0.0", port=int((os.environ("PORT",5000))))
+app.run(host="0.0.0.0", port=int((os.environ.get("PORT",5000))))
